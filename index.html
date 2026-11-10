@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Descrição do app/site/página para os buscadores -->
-    <meta name="description" content="BurguerVerse - O Smash Burger definitivo e o cardápio interativo mais completo da cidade."> 
+    <meta name="description"
+        content="BurguerVerse - O Smash Burger definitivo e o cardápio interativo mais completo da cidade.">
 
     <title>BurguerVerse | Cardápio Interativo & Mosaico de Sabores</title>
 
     <!-- Arquivo CSS importado -->
     <link rel="stylesheet" href="./CSS/main.css">
-     
+
     <!-- Google Fonts & Ícones (Material Symbols) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 </head>
+
 <body>
 
     <!-- CABEÇALHO FIXO -->
     <header class="header">
+
+        <div class="container header__nav">
+            <a href="#" class="header__logo" aria-label="BurguerVerse - Página Inicial">
+                Burguer<span>Verse</span>
+            </a>
+
+            <nav aria-label="Menu de Navegação Principal">
+                <ul class="header__menu">
+                    <li><a href="#destaques" class="header__link">Destaques</a></li>
+                    <li><a href="#lanches" class="header__link">Smashs</a></li>
+                    <li><a href="#milkshakes" class="header__link">Milkshakes</a></li>
+                    <li><a href="#pizzas" class="header__link">Pizzas & Bebidas</a></li>                   
+                </ul>
+            </nav>
+
+            <button class="btn btn--primary" type="button" aria-label="Abrir sacola de compras">
+                <span class="material-symbols-outlined" arial-hidden="true">shopping_bag</span>
+                <span>Fazer Pedido</span>
+            </button>
+        </div>
 
     </header>
 
@@ -35,6 +61,7 @@
     <footer class="footer">
 
     </footer>
-    
+
 </body>
+
 </html>
