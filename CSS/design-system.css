@@ -37,3 +37,51 @@
   --transition-normal: 0.3s ease;
 }
 
+/* Reset estrutural */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a base do rem para (62.5% de 16px) */
+html{
+    font-size: 62.5%;
+    scroll-behavior:  smooth;
+}
+
+/* Reset puramente estrutural no body */
+body{
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+/* Imagens responsivas sem ultrapassar o container */
+img, 
+picture {
+    /* A imagem sempre vai ocupar o espaço total. Não colocamos a altura, porque a altura é automatica */
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Herança de tipografia para entradas de texto e botões */
+input,
+button,
+textarea,
+select{
+    font: inherit;
+}
+
+/* Remoção de formatação padrão */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
