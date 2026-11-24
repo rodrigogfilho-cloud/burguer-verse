@@ -47,15 +47,69 @@ body {
 
 .header__menu{
   display: flex;
-  font-weight: 600; /* Peso da fonte das letras (faz com que a letra negrito) */
-  gap: 20px;  /* Serve para dar espaço entre as palavras (a) */
+  font-weight: 300; /* Peso da fonte das letras (faz com que a letra negrito) */
+  gap: 2.4rem;  /* Serve para dar espaço entre as palavras (a) / o rem é uma unidade de medida para facilitar a responsividade da página */
+}
+
+.header__link{
+  font-weight: 500;
+  transition: color var(--transition-fast); /* Transition deve ter o parametro "color" para indicar que a cor do texto vai sofrer uma transição e o var está a variável da cor que ele vai transicionar */
+
+}
+
+.header__link:hover{
+  color: var(--color-primary);
 }
 
 .btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  border:600;
+  border: none;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
 
+.btn:hover{
+  transform: translateY(-0.2rem);
+  
 }
 
 .btn--primary{
+  background-color: var(--color-primary);
+  color: var(--color-text-main);
+}
+
+.btn--primary:hover{
+  background-color: var(--color-primary-hover);
+}
+
+.hero{
+  padding: 8rem 0;
+  min-height: calc(100vh - 7rem);
+  display: flex;
+  align-items: center;
+}
+
+.hero__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero__title{
+  
+}
+
+.hero__title .highlight{
 
 }
 
+.hero__description{
+
+}
