@@ -47,7 +47,7 @@ body {
 
 .header__menu{
   display: flex;
-  font-weight: 600;
+  font-weight: 600; /* Peso da fonte das letras (faz com que a letra negrito) */
   gap: 20px;  /* Serve para dar espaço entre as palavras (a) */
 }
 
