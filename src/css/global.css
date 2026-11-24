@@ -46,7 +46,9 @@ body {
 }
 
 .header__menu{
-
+  display: flex;
+  font-weight: 600;
+  gap: 20px;  /* Serve para dar espaço entre as palavras (a) */
 }
 
 .btn{
